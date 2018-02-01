@@ -68,8 +68,11 @@ body {
 
 .wrapper:hover {
   opacity: 1;
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
+  transition: 0.4s;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
 }
 
 .wrapper-logo {
@@ -92,7 +95,7 @@ body {
 }
 
 .about {
-  margin: 3rem 0 4rem 0;
+  margin: 3rem 0 8rem 0;
 }
 
 .passions {
@@ -102,7 +105,7 @@ body {
   height: 400px;
   margin: 0 auto;
   background: url(../images/praiseB.jpg) repeat-y;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
   align-items: center;
@@ -120,20 +123,22 @@ body {
 
 .praise {
   text-align: center;
-  margin: 6rem 0;
-  margin-top: 9rem;
-  padding: 3rem 0;
-  background: url(../images/background78.jpg) repeat-y;
-  background-size: 100%;
+  padding: 5rem 0;
+  background: url(../images/CF13.jpg) repeat center;
+  background-size: cover;
+  background-attachment: fixed;
   border-radius: 0;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
-.praise-monitor {
+.praise-profile {
   display: flex;
   width: fit-content;
   margin: 0 auto;
   margin-top: 5rem;
   text-align: center;
+  flex-direction: row;
 }
 
 .praise-group-title {
@@ -149,52 +154,78 @@ body {
   color: rgb(211, 0, 127);
   width: fit-content;
   height: fit-content;
-  border: 0.1rem solid rgb(211, 0, 127);
-  border-radius: 0.5rem;
+  border: 2px solid rgb(211, 0, 127);
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
   margin-top: 1rem;
-  padding: 0.2rem 3rem;
+  padding: 10px 20px;
   text-decoration: none;
 }
 
 .praise-live:hover {
-  color: rgb(250, 250, 250);
-  background-color: rgb(211, 0, 127);
-  border: 0.1rem solid rgb(211, 0, 127);
-  transition: 0.1s;
-  -webkit-transition: 0.1s;
+  color: rgb(211, 0, 127);
+  border: 2px solid rgb(134, 0, 203);
+  transition: 0.4s;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
 }
 
-.praise-code {
+.praise-email {
   text-transform: uppercase;
   font-size: 1rem;
   color: rgb(211, 0, 127);
   width: fit-content;
   height: fit-content;
-  border: 0.1rem solid rgb(211, 0, 127);
-  border-radius: 0.5rem;
+  border: 2px solid rgb(211, 0, 127);
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
   margin-top: 1rem;
   margin-left: 0.3rem;
-  padding: 0.2rem 3rem;
+  padding: 10px 20px;
   text-decoration: none;
 }
 
-.praise-code:hover {
-  color: rgb(250, 250, 250);
-  background-color: rgb(211, 0, 127);
-  border: 0.1rem solid rgb(211, 0, 127);
-  transition: 0.1s;
-  -webkit-transition: 0.1s;
+.praise-email:hover {
+  color: rgb(211, 0, 127);
+  border: 2px solid rgb(134, 0, 203);
+  transition: 0.4s;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
 }
 
 .praise-description {
   width: 350px;
+  margin-bottom: 1.3rem;
+}
+
+.passions0 {
+  font-size: 1.5rem;
+  display: flex;
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+  background: url(../images/praiseA.jpg) repeat-y;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  align-items: center;
+  -webkit-filter: blur(0.3px);
+  filter: blur(0.3px);
 }
 
 .events {
-  margin: 6rem 0;
-  padding: 3rem 0;
-  background: url(../images/background78.jpg) repeat-y;
-  background-size: 100%;
+  margin: 0;
+  padding: 5rem 0;
+  background: url(../images/CF13.jpg) repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-size: cover;
   border-radius: 0;
 }
 
@@ -261,6 +292,34 @@ body {
   padding: 1rem;
 }
 
+.passions1 {
+  font-size: 1.5rem;
+  display: flex;
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+  background: url(../images/CF9.jpg) repeat-y;
+  background-size: co;
+  background-repeat: no-repeat;
+  text-align: center;
+  align-items: center;
+  -webkit-filter: blur(0.3px);
+  filter: blur(0.3px);
+}
+
+.locations {
+  text-align: center;
+  background-color: rgb(229, 229, 229);
+  background: url(../images/CF13.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 3rem 0 5rem 0;
+}
+
+.locations img {
+  width: 350px;
+}
+
 .contact {
   font-size: 1.2rem;
   background-color: rgb(50, 50, 50);
@@ -269,7 +328,8 @@ body {
   background-attachment: fixed;
   position: relative;
   color: rgb(250, 250, 250);
-  margin: 7rem 0;
+  margin: 0 0;
+  margin-bottom: 0.7rem;
   padding: 250px 150px;
 }
 
@@ -293,8 +353,11 @@ body {
 
 #to-the-top:hover {
   color: rgb(253, 0, 109);
-  transition: 0.5s;
-  -webkit-transition: 0.5;
+  transition: 0.4s;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
 }
 
 #nav {
@@ -315,6 +378,8 @@ body {
   font-family: "Lobster";
   text-transform: capitalize;
   text-decoration: none;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 #header-title {
@@ -335,12 +400,233 @@ body {
   text-align: center;
   text-decoration: none;
   mix-blend-mode: difference;
+
+  -webkit-animation: color-change 20s infinite;
+  -moz-animation: color-change 20s infinite;
+  -o-animation: color-change 20s infinite;
+  -ms-animation: color-change 20s infinite;
+  animation: color-change 20s infinite;
 }
 
-#header-title:nth-child(1):hover {
-  color: rgb(211, 0, 0);
-  transition: 2s;
-  -webkit-transition: 2s;
+@-webkit-keyframes color-change {
+  0% {
+    color: blue;
+  }
+
+  10% {
+    color: #8e44ad;
+  }
+
+  20% {
+    color: #1abc9c;
+  }
+
+  30% {
+    color: #d35400;
+  }
+
+  40% {
+    color: blue;
+  }
+
+  50% {
+    color: #34495e;
+  }
+
+  60% {
+    color: blue;
+  }
+
+  70% {
+    color: #2980b9;
+  }
+  80% {
+    color: #f1c40f;
+  }
+
+  90% {
+    color: #2980b9;
+  }
+
+  100% {
+    color: pink;
+  }
+}
+@-moz-keyframes color-change {
+  0% {
+    color: blue;
+  }
+
+  10% {
+    color: #8e44ad;
+  }
+
+  20% {
+    color: #1abc9c;
+  }
+
+  30% {
+    color: #d35400;
+  }
+
+  40% {
+    color: blue;
+  }
+
+  50% {
+    color: #34495e;
+  }
+
+  60% {
+    color: blue;
+  }
+
+  70% {
+    color: #2980b9;
+  }
+  80% {
+    color: #f1c40f;
+  }
+
+  90% {
+    color: #2980b9;
+  }
+
+  100% {
+    color: pink;
+  }
+}
+@-ms-keyframes color-change {
+  0% {
+    color: blue;
+  }
+
+  10% {
+    color: #8e44ad;
+  }
+
+  20% {
+    color: #1abc9c;
+  }
+
+  30% {
+    color: #d35400;
+  }
+
+  40% {
+    color: blue;
+  }
+
+  50% {
+    color: #34495e;
+  }
+
+  60% {
+    color: blue;
+  }
+
+  70% {
+    color: #2980b9;
+  }
+  80% {
+    color: #f1c40f;
+  }
+
+  90% {
+    color: #2980b9;
+  }
+
+  100% {
+    color: pink;
+  }
+}
+@-o-keyframes color-change {
+  0% {
+    color: blue;
+  }
+
+  10% {
+    color: #8e44ad;
+  }
+
+  20% {
+    color: #1abc9c;
+  }
+
+  30% {
+    color: #d35400;
+  }
+
+  40% {
+    color: blue;
+  }
+
+  50% {
+    color: #34495e;
+  }
+
+  60% {
+    color: blue;
+  }
+
+  70% {
+    color: #2980b9;
+  }
+  80% {
+    color: #f1c40f;
+  }
+
+  90% {
+    color: #2980b9;
+  }
+
+  100% {
+    color: pink;
+  }
+}
+@keyframes color-change {
+  0% {
+    color: blue;
+  }
+
+  10% {
+    color: #8e44ad;
+  }
+
+  20% {
+    color: #1abc9c;
+  }
+
+  30% {
+    color: #d35400;
+  }
+
+  40% {
+    color: blue;
+  }
+
+  50% {
+    color: #34495e;
+  }
+
+  60% {
+    color: blue;
+  }
+
+  70% {
+    color: #2980b9;
+  }
+  80% {
+    color: #f1c40f;
+  }
+
+  90% {
+    color: #2980b9;
+  }
+
+  100% {
+    color: pink;
+  }
 }
 
 #header-title-dev {
@@ -369,17 +655,19 @@ body {
   text-transform: uppercase;
 }
 
-#about-introduce {
-  font-size: 1.1rem;
-  margin: 1rem 20%;
-  margin-top: 3rem;
-}
-
 #NKUMC-link {
   color: rgb(211, 0, 127);
-  font-size: 1.1rem;
+  font-family: "Lora";
+  font-size: 0.95rem;
   font-weight: 800;
   text-decoration: none;
+}
+
+#about-introduce {
+  font-family: "Lora";
+  font-size: 0.8rem;
+  margin: 2rem 20%;
+  margin-top: 3rem;
 }
 
 #theIronYard:hover {
@@ -389,26 +677,32 @@ body {
 }
 
 #about-contact {
-  text-align: center;
   margin-top: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 #about-contact-button {
   font-size: 1rem;
-  color: rgb(250, 250, 250);
-  background-color: rgb(211, 0, 127);
+  color: #898989;
   width: fit-content;
-  border: 0.1rem solid rgb(211, 0, 127);
-  border-radius: 0.5rem;
-  padding: 0.2rem 0.5rem;
+  border: 2px solid rgba(137, 137, 137, 0.5);
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  padding: 15px 25px;
   text-decoration: none;
 }
 
 #about-contact-button:hover {
-  color: rgb(211, 0, 127);
-  background-color: rgb(250, 250, 250);
-  transition: 0.1s;
-  -webkit-transition: 0.1s;
+  color: rgb(118, 118, 118);
+  background-color: transparent;
+  border: 2px solid rgb(155, 129, 74);
+  transition: 0.4s;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
 }
 
 #praise-text {
@@ -417,6 +711,26 @@ body {
   color: rgb(0, 0, 0);
   width: fit-content;
   margin: auto;
+  text-transform: uppercase;
+}
+
+#praise-text0 {
+  font-family: "Lora";
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+  width: fit-content;
+  margin: auto;
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+
+#praise-text1 {
+  font-family: "Lora";
+  font-size: 0.8rem;
+  color: rgb(0, 0, 0);
+  width: 55%;
+  margin: auto;
+  margin-top: 2rem;
   text-transform: uppercase;
 }
 
@@ -442,6 +756,11 @@ body {
   background: url(../images/screen4.png) no-repeat 50px;
   background-position: 3.15rem 1.1rem;
   background-size: 230px;
+}
+
+#passion-2 {
+  font-size: 2.3rem;
+  padding: 0 20%;
 }
 
 #events-text {
@@ -472,8 +791,11 @@ body {
 #events-pdf-text:hover {
   color: rgb(211, 0, 127);
   background-color: transparent;
-  transition: 0.1s;
-  -webkit-transition: 0.1s;
+  transition: 0.4s;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
 }
 
 #events-education-text {
@@ -520,6 +842,22 @@ body {
   text-align: center;
 }
 
+#locations-text {
+  font-family: "Lora";
+  font-size: 3rem;
+  color: rgb(0, 0, 0);
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+#locations-introduce {
+  font-size: 1.1rem;
+  width: fit-content;
+  margin: 2rem auto 3rem auto;
+}
+
 #contact-verse {
   font-family: "Kaushan Script";
   font-size: 3.2rem;
@@ -544,8 +882,11 @@ body {
 
 #contact-facebook-link:hover {
   color: rgb(122, 240, 255);
-  transition: 0.1s;
-  -webkit-transition: 0.1s;
+  transition: 0.4s;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
 }
 
 #contact-event-link {
@@ -557,8 +898,11 @@ body {
 
 #contact-event-link:hover {
   color: rgb(122, 240, 255);
-  transition: 0.1s;
-  -webkit-transition: 0.1s;
+  transition: 0.4s;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
 }
 
 #contact-event-link:first-child {
@@ -582,8 +926,26 @@ body {
 
 #instagram:hover {
   color: rgb(253, 0, 109);
-  transition: 0.1s;
-  -webkit-transition: 0.1s;
+  transition: 0.4s;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+#music {
+  display: none;
+  width: 13rem;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  -moz-box-shadow: 2px 2px 4px 0px rgba(59, 99, 255, 0.4);
+  -webkit-box-shadow: 2px 2px 4px 0px rgba(59, 99, 255, 0.4);
+  box-shadow: 2px 2px 4px 0px rgba(59, 99, 255, 0.4);
+  -moz-border-radius: 7px 7px 7px 7px;
+  -webkit-border-radius: 7px 7px 7px 7px;
+  border-radius: 7px 7px 7px 7px;
 }
 
 @media (min-width: 1500px) {
@@ -592,11 +954,9 @@ body {
   }
 
   #about-introduce {
-    margin: 0 15rem 1rem 15rem;
-  }
-
-  #about-contact-button {
-    margin-left: 15rem;
+    margin-right: 20rem;
+    margin-bottom: 1rem;
+    margin-left: 20rem;
   }
 }
 
@@ -606,8 +966,39 @@ body {
     filter: blur(0px);
   }
 
+  .wrapper-logo {
+    margin: auto;
+    left: 20px;
+    top: 50px;
+  }
+
+  .wrapper-logo img {
+    width: 70px;
+  }
+
   .header {
     background-attachment: local;
+  }
+
+  .header-title {
+    font-size: 5rem;
+  }
+
+  .passions {
+    background: url(../images/praiseB.jpg) no-repeat;
+    background-size: 300%;
+  }
+
+  .passions-item {
+    font-size: 2rem;
+  }
+
+  .praise-profile:nth-child(odd) {
+    flex-flow: column-reverse;
+  }
+
+  .praise-profile:nth-child(even) {
+    text-align: center;
   }
 
   .praise-description {
@@ -633,6 +1024,15 @@ body {
     width: 90%;
   }
 
+  #header-title:nth-child(1) {
+    font-size: 3.5rem;
+  }
+
+  #NKUMC-text {
+    font-size: 0.7rem;
+    width: fit-content;
+  }
+
   #about-introduce {
     margin: 1rem 10%;
   }
@@ -651,12 +1051,24 @@ body {
     margin: auto;
   }
 
-  .praise-monitor {
+  .praise-profile {
     display: flex;
     flex-wrap: wrap;
   }
 
   .passions {
+    font-size: 0.7rem;
+    width: fit-content;
+    margin: auto;
+  }
+
+  .passions0 {
+    font-size: 0.7rem;
+    width: fit-content;
+    margin: auto;
+  }
+
+  .passions1 {
     font-size: 0.7rem;
     width: fit-content;
     margin: auto;
