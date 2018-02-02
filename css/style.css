@@ -47,12 +47,14 @@ body {
   font-weight: 300;
   -webkit-filter: blur(0.3px);
   filter: blur(0.3px);
+  margin: 0;
 }
 
 .nav-to-top {
   position: fixed;
   right: 2rem;
   bottom: 1.5rem;
+  z-index: 1000;
 }
 
 .wrapper {
@@ -85,6 +87,8 @@ body {
 
 .header {
   text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
   background: url(../images/praiseC.jpg) no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -108,6 +112,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
   align-items: center;
   -webkit-filter: blur(0.3px);
   filter: blur(0.3px);
@@ -123,6 +129,8 @@ body {
 
 .praise {
   text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
   padding: 5rem 0;
   background: url(../images/CF13.jpg) repeat center;
   background-size: cover;
@@ -138,6 +146,8 @@ body {
   margin: 0 auto;
   margin-top: 5rem;
   text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
   flex-direction: row;
 }
 
@@ -214,6 +224,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
   align-items: center;
   -webkit-filter: blur(0.3px);
   filter: blur(0.3px);
@@ -249,6 +261,8 @@ body {
 
 .events-skills-group {
   text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
 }
 
 .events-skills-logo {
@@ -299,9 +313,11 @@ body {
   height: 400px;
   margin: 0 auto;
   background: url(../images/CF9.jpg) repeat-y;
-  background-size: co;
+  background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
   align-items: center;
   -webkit-filter: blur(0.3px);
   filter: blur(0.3px);
@@ -309,6 +325,8 @@ body {
 
 .locations {
   text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
   background-color: rgb(229, 229, 229);
   background: url(../images/CF13.jpg) no-repeat center;
   background-size: cover;
@@ -329,7 +347,6 @@ body {
   position: relative;
   color: rgb(250, 250, 250);
   margin: 0 0;
-  margin-bottom: 0.7rem;
   padding: 250px 150px;
 }
 
@@ -339,12 +356,17 @@ body {
 
 .footer {
   text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
 }
 
 #to-the-top {
   font-size: 1.8rem;
   font-family: "Lobster";
   font-weight: 800;
+  position: fixed;
+  right: 2rem;
+  bottom: 1.5rem;
   text-transform: uppercase;
   text-decoration: none;
   color: rgb(211, 0, 127);
@@ -389,6 +411,8 @@ body {
   color: rgb(250, 250, 250);
   padding-top: 0;
   text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
 }
 
 #header-title:nth-child(1) {
@@ -398,9 +422,10 @@ body {
   margin: 0;
   color: #ffb300;
   text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
   text-decoration: none;
   mix-blend-mode: difference;
-
   -webkit-animation: color-change 20s infinite;
   -moz-animation: color-change 20s infinite;
   -o-animation: color-change 20s infinite;
@@ -452,6 +477,7 @@ body {
     color: pink;
   }
 }
+
 @-moz-keyframes color-change {
   0% {
     color: blue;
@@ -496,6 +522,7 @@ body {
     color: pink;
   }
 }
+
 @-ms-keyframes color-change {
   0% {
     color: blue;
@@ -540,6 +567,7 @@ body {
     color: pink;
   }
 }
+
 @-o-keyframes color-change {
   0% {
     color: blue;
@@ -631,6 +659,8 @@ body {
 
 #header-title-dev {
   text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
   justify-content: center;
 }
 
@@ -644,6 +674,8 @@ body {
   margin: 0 auto;
   margin-bottom: 1rem;
   text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
 }
 
 #about-text {
@@ -679,6 +711,8 @@ body {
 #about-contact {
   margin-top: 1.5rem;
   text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
   text-transform: uppercase;
 }
 
@@ -735,25 +769,25 @@ body {
 }
 
 #praise-laptop0 {
-  background: url(../images/screen3.png) no-repeat 50px;
+  background: url() no-repeat 50px;
   background-position: 3.15rem 1.1rem;
   background-size: 230px;
 }
 
 #praise-laptop1 {
-  background: url(../images/screen2.png) no-repeat 50px;
+  background: url() no-repeat 50px;
   background-position: 3.15rem 1.1rem;
   background-size: 230px;
 }
 
 #praise-laptop2 {
-  background: url(../images/screen0.png) no-repeat 50px;
+  background: url() no-repeat 50px;
   background-position: 3.15rem 1.1rem;
   background-size: 230px;
 }
 
 #praise-laptop3 {
-  background: url(../images/screen4.png) no-repeat 50px;
+  background: url() no-repeat 50px;
   background-position: 3.15rem 1.1rem;
   background-size: 230px;
 }
@@ -774,6 +808,8 @@ body {
 
 #events-pdf {
   text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
 }
 
 #events-pdf-text {
@@ -784,6 +820,8 @@ body {
   margin: 0 auto;
   padding: 0.5rem 1rem;
   text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -805,6 +843,8 @@ body {
   margin: 3rem 0;
   text-transform: uppercase;
   text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
 }
 
 #events-skills-text {
@@ -814,6 +854,8 @@ body {
   margin: 3rem 0;
   text-transform: uppercase;
   text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
 }
 
 #events-skills-logo-group-1 {
@@ -831,6 +873,8 @@ body {
   margin: 3rem 0;
   text-transform: uppercase;
   text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
 }
 
 #events-volunteer-text {
@@ -840,6 +884,8 @@ body {
   margin: 3rem 0;
   text-transform: uppercase;
   text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
 }
 
 #locations-text {
@@ -866,6 +912,8 @@ body {
   margin: 0 auto;
   margin-bottom: 5rem;
   text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
 }
 
 #event-link {
@@ -917,14 +965,79 @@ body {
   color: rgb(122, 240, 255);
 }
 
-#instagram {
+.button {
   color: rgb(0, 0, 0);
+  font-size: 1rem;
   font-family: "Bahiana";
   text-transform: none;
   text-decoration: none;
+  padding: 0 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
 }
 
-#instagram:hover {
+.button:hover {
+  color: rgb(253, 0, 109);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 7rem auto;
+  padding: 1rem;
+  background: rgb(250, 250, 250);
+  border-radius: 1px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup .close {
+  font-family: "Lora";
+  position: absolute;
+  top: 0rem;
+  right: 0.7rem;
+  transition: all 200ms;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.popup .close:hover {
+  color: rgb(253, 221, 255);
+}
+
+.popup .content {
+  font-family: "Lora";
+  max-height: 30%;
+  overflow: auto;
+}
+
+#credit {
+  color: rgb(0, 0, 0);
+  font-family: "Lora";
+  text-transform: none;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+#credit:hover {
   color: rgb(253, 0, 109);
   transition: 0.4s;
   -webkit-transition: all 0.4s ease 0s;
@@ -935,33 +1048,55 @@ body {
 
 #music {
   display: none;
-  width: 13rem;
   -webkit-transition: all 0.5s linear;
   -moz-transition: all 0.5s linear;
   -o-transition: all 0.5s linear;
   transition: all 0.5s linear;
-  -moz-box-shadow: 2px 2px 4px 0px rgba(59, 99, 255, 0.4);
-  -webkit-box-shadow: 2px 2px 4px 0px rgba(59, 99, 255, 0.4);
-  box-shadow: 2px 2px 4px 0px rgba(59, 99, 255, 0.4);
-  -moz-border-radius: 7px 7px 7px 7px;
-  -webkit-border-radius: 7px 7px 7px 7px;
-  border-radius: 7px 7px 7px 7px;
+}
+
+#music-button {
+  display: -webkit-inline-box;
+  display: inline-block;
+  right: 2.5rem;
+  bottom: 4rem;
+  position: fixed;
+  padding: 5px 10px;
+  border: 2px solid rgb(211, 0, 127);
+  border-radius: 25px;
+  background-color: transparent;
+  z-index: 1000;
+}
+
+#music-button:hover {
+  border: 2px solid rgb(134, 0, 203);
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
 }
 
 @media (min-width: 1500px) {
   .events-section {
-    margin: 0 23rem;
+    margin: 2rem 23rem;
   }
 
   #about-introduce {
-    margin-right: 20rem;
-    margin-bottom: 1rem;
-    margin-left: 20rem;
+    margin: 2rem 30%;
   }
 }
 
 @media (max-width: 900px) {
-  #nav {
+  .passions {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  .passions0 {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  .passions1 {
     -webkit-filter: blur(0px);
     filter: blur(0px);
   }
@@ -998,11 +1133,7 @@ body {
   }
 
   .praise-profile:nth-child(even) {
-    text-align: center;
-  }
-
-  .praise-description {
-    width: 95%;
+    flex-flow: column-reverse;
   }
 
   .praise-live-code-div {
@@ -1010,6 +1141,10 @@ body {
 
   .portflio-live {
     margin-bottom: 1rem;
+  }
+
+  .locations img {
+    width: 250px;
   }
 
   .img {
@@ -1020,12 +1155,18 @@ body {
     background-attachment: local;
   }
 
+  .popup {
+    width: 70%;
+  }
+
   #nav {
     width: 90%;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
   }
 
   #header-title:nth-child(1) {
-    font-size: 3.5rem;
+    font-size: 5.5rem;
   }
 
   #NKUMC-text {
@@ -1040,11 +1181,72 @@ body {
   #about-contact-button {
     margin: 0 10%;
   }
+
+  #praise-profile-img1 {
+    order: 1;
+    -webkit-order: 1;
+  }
+
+  #praise-group {
+    order: 2;
+    -webkit-order: 2;
+  }
+
+  #praise-group-title {
+    order: 3;
+    -webkit-order: 3;
+  }
+
+  #praise-description {
+    order: 4;
+    -webkit-order: 4;
+  }
+
+  #praise-live {
+    order: 5;
+    -webkit-order: 5;
+  }
+
+  #praise-email {
+    order: 6;
+    -webkit-order: 6;
+  }
+
+  #passion-2 {
+    font-size: 1.4rem;
+  }
+
+  #contact-facebook-link,
+  #contact-event-link {
+    font-size: 1.1rem;
+  }
+
+  #contact-verse {
+    font-size: 2rem;
+  }
+
+  #locations-introduce {
+    margin: 2rem 15% 3rem 15%;
+  }
 }
 
 @media (max-width: 550px) {
   .wrapper {
     opacity: 1;
+  }
+
+  .wrapper-logo {
+    left: 10px;
+    top: 40px;
+  }
+
+  .wrapper-logo img {
+    width: 40px;
+  }
+
+  .header {
+    padding-top: 150px;
+    padding-bottom: 80px;
   }
 
   .praise-group {
@@ -1087,6 +1289,8 @@ body {
   .events-education-list {
     flex-wrap: wrap;
     text-align: center;
+    text-align: -moz-center;
+    text-align: -webkit-center;
     margin: 0 1rem;
   }
 
@@ -1107,6 +1311,8 @@ body {
   .events-work-group {
     flex-wrap: wrap;
     text-align: center;
+    text-align: -moz-center;
+    text-align: -webkit-center;
     margin: 0 1rem;
   }
 
@@ -1119,12 +1325,16 @@ body {
 
   .events-work-list li {
     margin-bottom: 1rem;
-    text-align: left;
+    text-align: center;
+    text-align: -moz-center;
+    text-align: -webkit-center;
   }
 
   .events-volunteer-group {
     flex-wrap: wrap;
     text-align: center;
+    text-align: -moz-center;
+    text-align: -webkit-center;
     margin: 0 1rem;
   }
 
@@ -1137,12 +1347,13 @@ body {
 
   .events-volunteer-list li {
     margin-bottom: 1rem;
-    text-align: left;
+    text-align: center;
+    text-align: -moz-center;
+    text-align: -webkit-center;
   }
 
   .contact {
     height: auto;
-    margin: 3rem 0;
     padding: 5rem 0;
   }
 
@@ -1155,11 +1366,30 @@ body {
   }
 
   #header-title:nth-child(1) {
-    font-size: 5rem;
+    font-size: 3rem;
   }
 
   #back-end-dev-text {
     font-size: 0.8rem;
     width: 17rem;
+  }
+
+  #contact-verse {
+    margin-bottom: 3rem;
+  }
+
+  #contact-facebook-link,
+  #contact-event-link {
+    font-size: 1rem;
+  }
+
+  #music-button {
+    right: 1.2rem;
+    bottom: 2.75rem;
+  }
+
+  #to-the-top {
+    right: 0.75rem;
+    bottom: 0.5rem;
   }
 }
