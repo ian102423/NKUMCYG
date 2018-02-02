@@ -1087,7 +1087,7 @@ body {
 }
 
 #music-button:hover {
-  border: 2px solid rgb(134, 0, 203);
+  border: 2px solid rgb(253, 0, 109);
   -webkit-transition: all 0.5s linear;
   -moz-transition: all 0.5s linear;
   -o-transition: all 0.5s linear;
