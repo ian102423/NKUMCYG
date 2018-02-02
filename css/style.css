@@ -678,6 +678,25 @@ body {
   text-align: -webkit-center;
 }
 
+#galatians {
+  font-family: "Lora";
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 2rem;
+  width: 20rem;
+}
+
+#galatians:hover {
+  -webkit-filter: blur(90px);
+  filter: blur(90px);
+  -webkit-transition: all 0.4s ease-in-out 0.4s;
+  -moz-transition: all 0.4s ease-in-out 0.4s;
+  -o-transition: all 0.4s ease-in-out 0.4s;
+  transition: all 0.4s ease-in-out 0.4s;
+  transform: scale(4);
+}
+
 #about-text {
   font-family: "Lora";
   font-size: 3rem;
@@ -1172,6 +1191,12 @@ body {
   #NKUMC-text {
     font-size: 0.7rem;
     width: fit-content;
+  }
+
+  #galatians {
+    font-size: 0.65rem;
+    margin-top: 1.5rem;
+    width: 15rem;
   }
 
   #about-introduce {
