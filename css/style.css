@@ -25,12 +25,6 @@
 }
 
 @font-face {
-  font-family: "Muli";
-  font-weight: 400;
-  src: local("Muli"), url("https://fonts.googleapis.com/css?family=Muli");
-}
-
-@font-face {
   font-family: "Lora", serif;
   font-weight: 400;
   src: local("Lora"), url("https://fonts.googleapis.com/css?family=Lora");
@@ -38,7 +32,7 @@
 
 * {
   color: rgb(77, 77, 77);
-  font-family: "Muli", sans-serif;
+  font-family: "Lora", sans-serif;
 }
 
 body {
@@ -48,6 +42,132 @@ body {
   -webkit-filter: blur(0.3px);
   filter: blur(0.3px);
   margin: 0;
+}
+
+.button0 {
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+  font-family: "Rock Salt";
+  position: absolute;
+  right: 4rem;
+  top: 4rem;
+  text-transform: none;
+  text-decoration: none;
+  padding: auto;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  z-index: 1000;
+  mix-blend-mode: difference;
+  -webkit-animation: color-change-event 1.2s infinite;
+  -moz-animation: color-change-event 1.2s infinite;
+  -o-animation: color-change-event 1.2s infinite;
+  -ms-animation: color-change-event 1.2s infinite;
+  animation: color-change-event 1.2s infinite;
+}
+
+@-webkit-keyframes color-change-event {
+  0% {
+    color: rgb(255, 255, 255);
+  }
+
+  100% {
+    color: rgba(255, 255, 255, 0.302);
+  }
+}
+
+@-moz-keyframes color-change-event {
+  0% {
+    color: rgb(255, 255, 255);
+  }
+
+  100% {
+    color: rgba(255, 255, 255, 0.302);
+  }
+}
+
+@-ms-keyframes color-change-event {
+  0% {
+    color: rgb(255, 255, 255);
+  }
+
+  100% {
+    color: rgba(255, 255, 255, 0.302);
+  }
+}
+
+@-o-keyframes color-change-event {
+  0% {
+    color: rgb(255, 255, 255);
+  }
+
+  100% {
+    color: rgba(255, 255, 255, 0.302);
+  }
+}
+@keyframes color-change-event {
+  0% {
+    color: rgb(255, 255, 255);
+  }
+
+  100% {
+    color: rgba(255, 255, 255, 0.302);
+  }
+}
+
+/* .button0:hover {
+  color: rgb(253, 0, 109);
+} */
+
+.overlay0 {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay0:target {
+  visibility: visible;
+  opacity: 1;
+  z-index: 1000;
+}
+
+.popup0 {
+  margin: 7rem auto;
+  padding: 1rem;
+  background: rgb(255, 255, 255);
+  border-radius: 1px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup0 .close0 {
+  font-family: "Lora";
+  position: absolute;
+  top: 0rem;
+  right: 0.7rem;
+  transition: all 200ms;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+}
+
+.popup0 .close0:hover {
+  color: rgb(253, 221, 255);
+}
+
+.popup0 .content0 {
+  font-family: "Lora";
+  max-height: 30%;
+  overflow: auto;
 }
 
 .nav-to-top {
@@ -64,7 +184,7 @@ body {
   position: fixed;
   top: 0;
   opacity: 0.9;
-  z-index: 1;
+  z-index: 1000;
   margin-top: 1.5rem;
 }
 
@@ -99,7 +219,9 @@ body {
 }
 
 .about {
-  margin: 3rem 0 8rem 0;
+  padding: 3rem 0 8rem 0;
+  text-align: -moz-center;
+  text-align: -webkit-center;
 }
 
 .passions {
@@ -122,7 +244,7 @@ body {
 .passions-item {
   font-family: "Kaushan Script";
   font-size: 2.8rem;
-  color: rgb(250, 250, 250);
+  color: rgb(255, 255, 255);
   margin: auto;
   padding: 0 1rem;
 }
@@ -144,6 +266,7 @@ body {
   display: flex;
   width: fit-content;
   margin: 0 auto;
+  max-width: 32.5rem;
   margin-top: 5rem;
   text-align: center;
   text-align: -moz-center;
@@ -194,7 +317,6 @@ body {
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   margin-top: 1rem;
-  margin-left: 0.3rem;
   padding: 10px 20px;
   text-decoration: none;
 }
@@ -239,6 +361,9 @@ body {
   background-attachment: fixed;
   background-size: cover;
   border-radius: 0;
+  text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
 }
 
 .events-section {
@@ -345,9 +470,11 @@ body {
   background-size: cover;
   background-attachment: fixed;
   position: relative;
-  color: rgb(250, 250, 250);
+  color: rgb(255, 255, 255);
   margin: 0 0;
   padding: 250px 150px;
+  text-align: -moz-center;
+  text-align: -webkit-center;
 }
 
 .contact-items {
@@ -360,6 +487,23 @@ body {
   text-align: -webkit-center;
 }
 
+#credit0 {
+  color: rgb(0, 0, 0);
+  font-family: "Lora";
+  text-transform: none;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+#credit0:hover {
+  color: rgb(253, 0, 109);
+  transition: 0.4s;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
 #to-the-top {
   font-size: 1.8rem;
   font-family: "Lobster";
@@ -370,7 +514,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: rgb(211, 0, 127);
-  z-index: 1;
+  z-index: 1000;
 }
 
 #to-the-top:hover {
@@ -396,8 +540,9 @@ body {
 }
 
 #nav li a {
-  color: rgb(250, 250, 250);
+  color: rgb(255, 255, 255);
   font-family: "Lobster";
+  font-size: 1.8rem;
   text-transform: capitalize;
   text-decoration: none;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
@@ -408,7 +553,7 @@ body {
   font-family: "Rock Salt";
   font-weight: 300;
   font-size: 9rem;
-  color: rgb(250, 250, 250);
+  color: rgb(255, 255, 255);
   padding-top: 0;
   text-align: center;
   text-align: -moz-center;
@@ -668,7 +813,7 @@ body {
   font-weight: 100;
   text-transform: uppercase;
   width: 30rem;
-  color: rgb(250, 250, 250);
+  color: rgb(255, 255, 255);
   background-color: transparent;
   border-radius: 0.3rem;
   margin: 0 auto;
@@ -698,11 +843,13 @@ body {
 }
 
 #about-text {
+  display: table;
   font-family: "Lora";
   font-size: 3rem;
   color: rgb(0, 0, 0);
   width: fit-content;
   margin: auto;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -718,7 +865,10 @@ body {
   font-family: "Lora";
   font-size: 0.8rem;
   margin: 2rem 20%;
-  margin-top: 3rem;
+  margin-top: 2.7rem;
+  text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
 }
 
 #theIronYard:hover {
@@ -787,28 +937,32 @@ body {
   text-transform: uppercase;
 }
 
-#praise-laptop0 {
+#praise-praise-img0 {
   background: url() no-repeat 50px;
   background-position: 3.15rem 1.1rem;
   background-size: 230px;
 }
 
-#praise-laptop1 {
+#praise-praise-img1 {
   background: url() no-repeat 50px;
   background-position: 3.15rem 1.1rem;
   background-size: 230px;
 }
 
-#praise-laptop2 {
+#praise-live-1 {
   background: url() no-repeat 50px;
   background-position: 3.15rem 1.1rem;
   background-size: 230px;
 }
 
-#praise-laptop3 {
-  background: url() no-repeat 50px;
-  background-position: 3.15rem 1.1rem;
-  background-size: 230px;
+#praise-text2 {
+  font-family: "Lora";
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+  width: fit-content;
+  margin: auto;
+  margin-top: 7rem;
+  text-transform: uppercase;
 }
 
 #passion-2 {
@@ -832,7 +986,7 @@ body {
 }
 
 #events-pdf-text {
-  color: rgb(250, 250, 250);
+  color: rgb(255, 255, 255);
   background-color: rgb(211, 0, 127);
   border: 0.1rem solid rgb(211, 0, 127);
   border-radius: 0.4rem;
@@ -926,7 +1080,7 @@ body {
 #contact-verse {
   font-family: "Kaushan Script";
   font-size: 3.2rem;
-  color: rgb(250, 250, 250);
+  color: rgb(255, 255, 255);
   width: fit-content;
   margin: 0 auto;
   margin-bottom: 5rem;
@@ -970,7 +1124,7 @@ body {
   color: rgb(139, 216, 255);
 }
 
-.button {
+.button1 {
   color: rgb(0, 0, 0);
   font-size: 1rem;
   font-family: "Bahiana";
@@ -981,11 +1135,11 @@ body {
   transition: all 0.3s ease-out;
 }
 
-.button:hover {
+.button1:hover {
   color: rgb(253, 0, 109);
 }
 
-.overlay {
+.overlay1 {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -997,22 +1151,22 @@ body {
   opacity: 0;
 }
 
-.overlay:target {
+.overlay1:target {
   visibility: visible;
   opacity: 1;
 }
 
-.popup {
+.popup1 {
   margin: 7rem auto;
   padding: 1rem;
-  background: rgb(250, 250, 250);
+  background: rgb(255, 255, 255);
   border-radius: 1px;
   width: 30%;
   position: relative;
   transition: all 5s ease-in-out;
 }
 
-.popup .close {
+.popup1 .close1 {
   font-family: "Lora";
   position: absolute;
   top: 0rem;
@@ -1024,17 +1178,17 @@ body {
   color: rgb(0, 0, 0);
 }
 
-.popup .close:hover {
+.popup1 .close1:hover {
   color: rgb(253, 221, 255);
 }
 
-.popup .content {
+.popup1 .content1 {
   font-family: "Lora";
   max-height: 30%;
   overflow: auto;
 }
 
-#credit {
+#credit1 {
   color: rgb(0, 0, 0);
   font-family: "Lora";
   text-transform: none;
@@ -1042,7 +1196,7 @@ body {
   margin-top: 1rem;
 }
 
-#credit:hover {
+#credit1:hover {
   color: rgb(253, 0, 109);
   transition: 0.4s;
   -webkit-transition: all 0.4s ease 0s;
@@ -1091,6 +1245,14 @@ body {
 }
 
 @media (max-width: 900px) {
+  .button0 {
+    font-size: 2rem;
+  }
+
+  .popup0 {
+    width: 50%;
+  }
+
   .passions {
     -webkit-filter: blur(0px);
     filter: blur(0px);
@@ -1126,7 +1288,6 @@ body {
   }
 
   .passions {
-    background: url(../images/praiseB.jpg) no-repeat;
     background-size: 300%;
   }
 
@@ -1161,8 +1322,12 @@ body {
     background-attachment: local;
   }
 
-  .popup {
-    width: 70%;
+  .popup1 {
+    width: 50%;
+  }
+
+  #credit0 {
+    font-size: 0.8rem;
   }
 
   #nav {
@@ -1183,18 +1348,19 @@ body {
 
   #galatians {
     font-size: 0.65rem;
+    margin: auto;
     margin-top: 1.5rem;
     width: 15rem;
   }
 
   #galatians:hover {
-    -webkit-filter: blur(0px);
+    /* -webkit-filter: blur(0px);
     filter: blur(0px);
     -webkit-transition: none;
     -moz-transition: none;
     -o-transition: none;
     transition: none;
-    transform: none;
+    transform: none; */
   }
 
   #about-introduce {
@@ -1258,6 +1424,15 @@ body {
 }
 
 @media (max-width: 550px) {
+  .button0 {
+    font-size: 1.2rem;
+    right: 1rem;
+  }
+
+  .popup0 {
+    width: 70%;
+  }
+
   .wrapper {
     opacity: 1;
   }
@@ -1382,6 +1557,10 @@ body {
   .contact {
     height: auto;
     padding: 5rem 0;
+  }
+
+  .popup1 {
+    width: 70%;
   }
 
   #nav {
