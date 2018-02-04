@@ -343,14 +343,14 @@ body {
   display: flex;
   text-align: center;
   justify-content: center;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
 }
 
 .events-list-text {
   margin: auto;
   margin-left: 0.75rem;
   margin-right: 0;
-  max-width: 330px;
+  max-width: 310px;
   min-width: 220px;
 }
 
@@ -910,16 +910,12 @@ body {
   text-transform: uppercase;
 }
 
-#events-list-img0 > img {
-  width: 100%;
-  min-width: 210px;
-  margin-right: 0.75rem;
-}
-
+#events-list-img0 > img,
 #events-list-img1 > img {
   width: 100%;
   min-width: 210px;
   margin-right: 0.75rem;
+  border-radius: 7px;
 }
 
 #locations-text {
@@ -1345,7 +1341,7 @@ body {
   .events-list-text {
     height: fit-content;
     width: fit-content;
-    max-width: 310px;
+    max-width: 290px;
     margin: 0 auto;
     margin-bottom: 1rem;
   }
