@@ -1310,6 +1310,7 @@ body {
   .passions {
     font-size: 0.7rem;
     width: fit-content;
+    max-height: 389px;
     margin: auto;
   }
 
@@ -1342,8 +1343,7 @@ body {
     height: fit-content;
     width: fit-content;
     max-width: 290px;
-    margin: 0 auto;
-    margin-bottom: 1rem;
+    margin: 1rem auto;
   }
 
   .contact {
@@ -1380,6 +1380,12 @@ body {
   #contact-facebook-link,
   #contact-event-link {
     font-size: 1rem;
+  }
+
+  #events-list-img0 > img,
+  #events-list-img1 > img {
+    max-width: 225px;
+    max-height: 300px;
   }
 
   #music-button {
