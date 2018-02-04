@@ -97,7 +97,7 @@ body {
   padding: 1rem;
   background: rgb(255, 255, 255);
   border-radius: 1px;
-  width: 30%;
+  width: 40%;
   position: relative;
   transition: all 5s ease-in-out;
 }
@@ -124,6 +124,9 @@ body {
   font-family: "Lora";
   max-height: 30%;
   overflow: auto;
+  text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
 }
 
 .nav-to-top {
@@ -171,7 +174,8 @@ body {
   position: relative;
   margin-top: -1.5rem;
   padding-top: 250px;
-  padding-bottom: 350px;
+  padding-bottom: 230px;
+  background-attachment: local;
 }
 
 .about {
@@ -215,6 +219,8 @@ body {
   background-attachment: fixed;
   border-radius: 0;
   flex-wrap: wrap;
+  flex-wrap: nowrap;
+
   flex-direction: row;
 }
 
@@ -228,22 +234,27 @@ body {
   text-align: -moz-center;
   text-align: -webkit-center;
   flex-direction: row;
+  flex: 1;
+}
+
+.praise-group {
+  max-width: 320px;
 }
 
 .praise-group-title {
   font-family: "Lora";
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   color: rgb(0, 0, 0);
   margin: 1rem 0;
 }
 
-.praise-live {
+.praise-facebook {
   text-transform: uppercase;
   font-size: 1rem;
   color: rgb(211, 0, 127);
   width: fit-content;
   height: fit-content;
-  border: 2px solid rgb(211, 0, 127);
+  border: 2px solid rgb(250, 250, 250);
   border-radius: 25px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
@@ -252,9 +263,9 @@ body {
   text-decoration: none;
 }
 
-.praise-live:hover {
+.praise-facebook:hover {
   color: rgb(211, 0, 127);
-  border: 2px solid rgb(134, 0, 203);
+  border: 2px solid rgb(211, 0, 127);
   transition: 0.4s;
   -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
@@ -268,7 +279,7 @@ body {
   color: rgb(211, 0, 127);
   width: fit-content;
   height: fit-content;
-  border: 2px solid rgb(211, 0, 127);
+  border: 2px solid rgb(255, 255, 255);
   border-radius: 25px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
@@ -279,7 +290,7 @@ body {
 
 .praise-email:hover {
   color: rgb(211, 0, 127);
-  border: 2px solid rgb(134, 0, 203);
+  border: 2px solid rgb(211, 0, 127);
   transition: 0.4s;
   -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
@@ -288,7 +299,8 @@ body {
 }
 
 .praise-description {
-  width: 350px;
+  font-size: 1rem;
+  width: 320px;
   margin-bottom: 1.3rem;
 }
 
@@ -323,68 +335,23 @@ body {
 }
 
 .events-section {
-  margin-top: 5rem;
+  text-align: center;
+  flex-wrap: wrap;
 }
 
-.events-education-list {
+.events-list {
   display: flex;
-  margin: 0 20%;
+  text-align: center;
+  justify-content: center;
   margin-bottom: 1rem;
 }
 
-.events-education-list-date {
-  min-width: 15rem;
-}
-
-.events-education-list-name {
-  color: rgb(211, 0, 127);
-}
-
-.events-skills-group {
-  text-align: center;
-  text-align: -moz-center;
-  text-align: -webkit-center;
-}
-
-.events-skills-logo {
-  height: 70px;
-}
-.events-work-group {
-  display: flex;
-  margin: 0 15%;
-  margin-top: 2rem;
-}
-
-.events-work-date {
-  min-width: 15rem;
-}
-
-.events-work-name {
-  color: rgb(211, 0, 127);
-}
-
-.events-work-text-list ul {
-  margin: 0;
-  padding: 1rem;
-}
-
-.events-volunteer-group {
-  display: flex;
-  margin: 0 15%;
-  margin-top: 2rem;
-}
-
-.events-volunteer-date {
-  min-width: 15rem;
-}
-
-.events-volunteer-name {
-  color: rgb(211, 0, 127);
-}
-
-.events-volunteer-text-list ul {
-  margin: 0;
-  padding: 1rem;
+.events-list-text {
+  margin: auto;
+  margin-left: 0.75rem;
+  margin-right: 0;
+  max-width: 350px;
+  min-width: 220px;
 }
 
 .passions1 {
@@ -444,11 +411,12 @@ body {
 }
 
 #credit0 {
-  color: rgb(0, 0, 0);
   font-family: "Lora";
+  font-size: 1.1rem;
+  color: rgb(0, 0, 0);
   text-transform: none;
   text-decoration: none;
-  margin-top: 1rem;
+  margin: 1rem;
 }
 
 #credit0:hover {
@@ -873,22 +841,9 @@ body {
   width: 55%;
   margin: auto;
   margin-top: 2rem;
-  text-transform: uppercase;
 }
 
-#praise-praise-img0 {
-  background: url() no-repeat 50px;
-  background-position: 3.15rem 1.1rem;
-  background-size: 230px;
-}
-
-#praise-praise-img1 {
-  background: url() no-repeat 50px;
-  background-position: 3.15rem 1.1rem;
-  background-size: 230px;
-}
-
-#praise-live-1 {
+#praise-facebook-1 {
   background: url() no-repeat 50px;
   background-position: 3.15rem 1.1rem;
   background-size: 230px;
@@ -918,7 +873,7 @@ body {
   text-transform: uppercase;
 }
 
-#events-pdf {
+/* #events-pdf {
   text-align: center;
   text-align: -moz-center;
   text-align: -webkit-center;
@@ -946,58 +901,25 @@ body {
   -moz-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
-}
+} */
 
-#events-education-text {
-  font-family: "Lora";
-  font-size: 1.2rem;
-  color: rgb(0, 0, 0);
-  margin: 3rem 0;
+#events-text-friday,
+#events-text-sunday {
+  font-size: 1rem;
+  color: #000;
   text-transform: uppercase;
-  text-align: center;
-  text-align: -moz-center;
-  text-align: -webkit-center;
 }
 
-#events-skills-text {
-  font-family: "Lora";
-  font-size: 1.2rem;
-  color: rgb(0, 0, 0);
-  margin: 3rem 0;
-  text-transform: uppercase;
-  text-align: center;
-  text-align: -moz-center;
-  text-align: -webkit-center;
+#events-list-img0 > img {
+  width: 100%;
+  min-width: 210px;
+  margin-right: 0.75rem;
 }
 
-#events-skills-logo-group-1 {
-  margin-top: 1.5rem;
-}
-
-#events-skills-logo-group-2 {
-  margin-top: 0.5rem;
-}
-
-#events-work-text {
-  font-family: "Lora";
-  font-size: 1.2rem;
-  color: rgb(0, 0, 0);
-  margin: 3rem 0;
-  text-transform: uppercase;
-  text-align: center;
-  text-align: -moz-center;
-  text-align: -webkit-center;
-}
-
-#events-volunteer-text {
-  font-family: "Lora";
-  font-size: 1.2rem;
-  color: rgb(0, 0, 0);
-  margin: 3rem 0;
-  text-transform: uppercase;
-  text-align: center;
-  text-align: -moz-center;
-  text-align: -webkit-center;
+#events-list-img1 > img {
+  width: 100%;
+  min-width: 210px;
+  margin-right: 0.75rem;
 }
 
 #locations-text {
@@ -1128,8 +1050,9 @@ body {
 }
 
 #credit1 {
-  color: rgb(0, 0, 0);
   font-family: "Lora";
+  font-size: 1.1rem;
+  color: rgb(0, 0, 0);
   text-transform: none;
   text-decoration: none;
   margin-top: 1rem;
@@ -1168,11 +1091,21 @@ body {
 
 @media (min-width: 1500px) {
   .events-section {
-    margin: 2rem 23rem;
+    max-width: 100%;
+    display: table;
+  }
+
+  .events-list-text {
+    max-width: 55rem;
   }
 
   #about-introduce {
     margin: 2rem 30%;
+    max-width: 50rem;
+  }
+
+  #praise-text1 {
+    max-width: 50rem;
   }
 }
 
@@ -1211,11 +1144,6 @@ body {
     width: 60px;
   }
 
-  .header {
-    background-attachment: local;
-    padding-bottom: 230px;
-  }
-
   .header-title {
     font-size: 5rem;
   }
@@ -1236,10 +1164,10 @@ body {
     flex-flow: column-reverse;
   }
 
-  .praise-live-code-div {
+  .praise-facebook-code-div {
   }
 
-  .portflio-live {
+  .portflio-facebook {
     margin-bottom: 1rem;
   }
 
@@ -1314,7 +1242,7 @@ body {
     -webkit-order: 4;
   }
 
-  #praise-live {
+  #praise-facebook {
     order: 5;
     -webkit-order: 5;
   }
@@ -1405,76 +1333,21 @@ body {
     margin-bottom: 0;
   }
 
-  .events-education-list {
+  .events-list {
     height: fit-content;
     width: fit-content;
-    margin: 3rem auto;
-  }
-
-  .events-education-list {
     flex-wrap: wrap;
     text-align: center;
     text-align: -moz-center;
     text-align: -webkit-center;
-    margin: 0 1rem;
   }
 
-  .events-education-list-date {
+  .events-list-text {
     height: fit-content;
     width: fit-content;
+    max-width: 310px;
     margin: 0 auto;
     margin-bottom: 1rem;
-  }
-
-  .events-education-list-name {
-    height: fit-content;
-    width: fit-content;
-    margin: 0 auto;
-    margin-bottom: 3rem;
-  }
-
-  .events-work-group {
-    flex-wrap: wrap;
-    text-align: center;
-    text-align: -moz-center;
-    text-align: -webkit-center;
-    margin: 0 1rem;
-  }
-
-  .events-work-date {
-    height: fit-content;
-    width: fit-content;
-    margin: 3rem auto;
-    margin-bottom: 1rem;
-  }
-
-  .events-work-list li {
-    margin-bottom: 1rem;
-    text-align: center;
-    text-align: -moz-center;
-    text-align: -webkit-center;
-  }
-
-  .events-volunteer-group {
-    flex-wrap: wrap;
-    text-align: center;
-    text-align: -moz-center;
-    text-align: -webkit-center;
-    margin: 0 1rem;
-  }
-
-  .events-volunteer-date {
-    height: fit-content;
-    width: fit-content;
-    margin: 3rem auto;
-    margin-bottom: 1rem;
-  }
-
-  .events-volunteer-list li {
-    margin-bottom: 1rem;
-    text-align: center;
-    text-align: -moz-center;
-    text-align: -webkit-center;
   }
 
   .contact {
