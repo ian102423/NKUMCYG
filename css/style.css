@@ -45,78 +45,34 @@ body {
 }
 
 .button0 {
-  color: rgb(255, 255, 255);
-  font-size: 3rem;
+  color: #fff;
+  font-size: 2rem;
   font-family: "Rock Salt";
   position: absolute;
-  right: 4rem;
-  top: 4rem;
+  right: 5rem;
+  top: 6rem;
   text-transform: none;
   text-decoration: none;
-  padding: auto;
+  padding: 5px 15px;
   cursor: pointer;
   transition: all 0.3s ease-out;
   z-index: 1000;
   mix-blend-mode: difference;
-  -webkit-animation: color-change-event 1.2s infinite;
-  -moz-animation: color-change-event 1.2s infinite;
-  -o-animation: color-change-event 1.2s infinite;
-  -ms-animation: color-change-event 1.2s infinite;
-  animation: color-change-event 1.2s infinite;
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
 }
 
-@-webkit-keyframes color-change-event {
-  0% {
-    color: rgb(255, 255, 255);
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff1177,
+      0 0 70px #ff1177, 0 0 80px #ff1177, 0 0 100px #ff1177, 0 0 150px #ff1177;
   }
-
-  100% {
-    color: rgba(255, 255, 255, 0.302);
-  }
-}
-
-@-moz-keyframes color-change-event {
-  0% {
-    color: rgb(255, 255, 255);
-  }
-
-  100% {
-    color: rgba(255, 255, 255, 0.302);
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff1177,
+      0 0 35px #ff1177, 0 0 40px #ff1177, 0 0 50px #ff1177, 0 0 75px #ff1177;
   }
 }
-
-@-ms-keyframes color-change-event {
-  0% {
-    color: rgb(255, 255, 255);
-  }
-
-  100% {
-    color: rgba(255, 255, 255, 0.302);
-  }
-}
-
-@-o-keyframes color-change-event {
-  0% {
-    color: rgb(255, 255, 255);
-  }
-
-  100% {
-    color: rgba(255, 255, 255, 0.302);
-  }
-}
-@keyframes color-change-event {
-  0% {
-    color: rgb(255, 255, 255);
-  }
-
-  100% {
-    color: rgba(255, 255, 255, 0.302);
-  }
-}
-
-/* .button0:hover {
-  color: rgb(253, 0, 109);
-} */
 
 .overlay0 {
   position: fixed;
@@ -513,17 +469,10 @@ body {
   bottom: 1.5rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: rgb(211, 0, 127);
+  color: rgb(255, 255, 255);
   z-index: 1000;
-}
-
-#to-the-top:hover {
-  color: rgb(253, 0, 109);
-  transition: 0.4s;
-  -webkit-transition: all 0.4s ease 0s;
-  -moz-transition: all 0.4s ease 0s;
-  -o-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 #nav {
@@ -571,11 +520,11 @@ body {
   text-align: -webkit-center;
   text-decoration: none;
   mix-blend-mode: difference;
-  -webkit-animation: color-change 20s infinite;
-  -moz-animation: color-change 20s infinite;
-  -o-animation: color-change 20s infinite;
-  -ms-animation: color-change 20s infinite;
-  animation: color-change 20s infinite;
+  -webkit-animation: color-change 30s infinite;
+  -moz-animation: color-change 30s infinite;
+  -o-animation: color-change 30s infinite;
+  -ms-animation: color-change 30s infinite;
+  animation: color-change 30s infinite;
 }
 
 @-webkit-keyframes color-change {
@@ -830,16 +779,6 @@ body {
   color: #ffffff;
   margin-top: 2rem;
   width: 20rem;
-}
-
-#galatians:hover {
-  -webkit-filter: blur(90px);
-  filter: blur(90px);
-  -webkit-transition: all 0.4s ease-in-out 0.4s;
-  -moz-transition: all 0.4s ease-in-out 0.4s;
-  -o-transition: all 0.4s ease-in-out 0.4s;
-  transition: all 0.4s ease-in-out 0.4s;
-  transform: scale(4);
 }
 
 #about-text {
@@ -1220,18 +1159,11 @@ body {
   bottom: 4rem;
   position: fixed;
   padding: 5px 10px;
-  border: 2px solid rgb(211, 0, 127);
+  border: 2px solid rgb(255, 255, 255);
   border-radius: 25px;
   background-color: transparent;
   z-index: 1000;
-}
-
-#music-button:hover {
-  border: 2px solid rgb(253, 0, 109);
-  -webkit-transition: all 0.5s linear;
-  -moz-transition: all 0.5s linear;
-  -o-transition: all 0.5s linear;
-  transition: all 0.5s linear;
+  box-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 @media (min-width: 1500px) {
@@ -1246,7 +1178,8 @@ body {
 
 @media (max-width: 900px) {
   .button0 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    right: 3rem;
   }
 
   .popup0 {
@@ -1353,16 +1286,6 @@ body {
     width: 15rem;
   }
 
-  #galatians:hover {
-    /* -webkit-filter: blur(0px);
-    filter: blur(0px);
-    -webkit-transition: none;
-    -moz-transition: none;
-    -o-transition: none;
-    transition: none;
-    transform: none; */
-  }
-
   #about-introduce {
     margin: 1rem 10%;
   }
@@ -1425,7 +1348,7 @@ body {
 
 @media (max-width: 550px) {
   .button0 {
-    font-size: 1.2rem;
+    font-size: 0.75rem;
     right: 1rem;
   }
 
