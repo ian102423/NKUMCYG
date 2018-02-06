@@ -30,6 +30,12 @@
   src: local("Lora"), url("https://fonts.googleapis.com/css?family=Lora");
 }
 
+@font-face {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  src: local("Raleway"), url("https://fonts.googleapis.com/css?family=Raleway");
+}
+
 * {
   color: rgb(77, 77, 77);
   font-family: "Lora", sans-serif;
@@ -178,6 +184,7 @@ body {
 }
 
 .about {
+  background-color: rgb(241, 241, 241);
   padding: 3rem 0 8rem 0;
   text-align: -moz-center;
   text-align: -webkit-center;
@@ -189,7 +196,7 @@ body {
   width: 100%;
   height: 800px;
   margin: 0 auto;
-  background: url(../images/praiseB.jpg) no-repeat;
+  background: url(../images/CF1.jpg) no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -198,8 +205,18 @@ body {
   text-align: -moz-center;
   text-align: -webkit-center;
   align-items: center;
-  -webkit-filter: blur(0.3px);
-  filter: blur(0.3px);
+  -webkit-filter: blur(0.2px);
+  filter: blur(0.2px);
+}
+
+.passions-youth-verse {
+  color: rgb(80, 80, 80);
+  font-family: "Kaushan Script";
+  font-size: 2rem;
+  max-width: 39rem;
+  margin: auto;
+  padding: 0 1rem;
+  border-left: 2px solid #c9a47a;
 }
 
 .passions-item {
@@ -216,8 +233,8 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  -webkit-filter: blur(0.3px);
-  filter: blur(0.3px);
+  -webkit-filter: blur(0.2px);
+  filter: blur(0.2px);
 }
 
 .worship-item-group-detail {
@@ -225,7 +242,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-
   text-align: center;
   flex-direction: column;
 }
@@ -240,17 +256,17 @@ body {
 }
 
 .praise {
-  text-align: center;
-  text-align: -moz-center;
-  text-align: -webkit-center;
-  padding: 5rem 0;
-  background: url(../images/CF13.jpg) repeat center;
+  background: url(../images/CF13.jpg) no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   border-radius: 0;
+  padding: 5rem 0;
   flex-wrap: nowrap;
   flex-direction: row;
+  text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
 }
 
 .praise-profile {
@@ -278,6 +294,7 @@ body {
 }
 
 .praise-facebook {
+  font-family: "Raleway";
   text-transform: uppercase;
   font-size: 1rem;
   color: rgb(211, 0, 127);
@@ -303,6 +320,7 @@ body {
 }
 
 .praise-email {
+  font-family: "Raleway";
   text-transform: uppercase;
   font-size: 1rem;
   color: rgb(211, 0, 127);
@@ -348,9 +366,30 @@ body {
   text-align: -moz-center;
   text-align: -webkit-center;
   align-items: center;
-  -webkit-filter: blur(0.3px);
-  filter: blur(0.3px);
+  -webkit-filter: blur(0.2px);
+  filter: blur(0.2px);
   flex-direction: column;
+}
+
+.passions-youth {
+  color: #000000;
+  font-size: 1.5rem;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  padding: 4rem 0;
+  background: url(../images/.jpg) no-repeat;
+  background-color: rgb(241, 241, 241);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+  text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
+  align-items: center;
+  -webkit-filter: blur(0.2px);
+  filter: blur(0.2px);
 }
 
 .passions1 {
@@ -368,8 +407,8 @@ body {
   text-align: -moz-center;
   text-align: -webkit-center;
   align-items: center;
-  -webkit-filter: blur(0.3px);
-  filter: blur(0.3px);
+  -webkit-filter: blur(0.2px);
+  filter: blur(0.2px);
 }
 
 .passions2 {
@@ -386,8 +425,8 @@ body {
   text-align: -moz-center;
   text-align: -webkit-center;
   align-items: center;
-  -webkit-filter: blur(0.3px);
-  filter: blur(0.3px);
+  -webkit-filter: blur(0.2px);
+  filter: blur(0.2px);
 }
 
 .passions3 {
@@ -424,20 +463,19 @@ body {
   text-align: -moz-center;
   text-align: -webkit-center;
   align-items: center;
-  -webkit-filter: blur(0.3px);
-  filter: blur(0.3px);
-  text-shadow: 0.5px 0.5px 0 #000;
+  -webkit-filter: blur(0.2px);
+  filter: blur(0.2px);
 }
 
 .locations {
+  background: url(../images/CF13.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 3rem 0 5rem 0;
   text-align: center;
   text-align: -moz-center;
   text-align: -webkit-center;
-  background-color: rgb(229, 229, 229);
-  background: url(../images/CF13.jpg) no-repeat center;
-  background-size: cover;
-  background-attachment: fixed;
-  padding: 3rem 0 5rem 0;
 }
 
 .locations img {
@@ -853,8 +891,9 @@ body {
 }
 
 #about-contact-button {
+  font-family: "Raleway";
   font-size: 1rem;
-  color: #898989;
+
   width: fit-content;
   border: 2px solid rgba(137, 137, 137, 0.5);
   border-radius: 25px;
@@ -865,9 +904,8 @@ body {
 }
 
 #about-contact-button:hover {
-  color: rgb(118, 118, 118);
   background-color: transparent;
-  border: 2px solid rgb(155, 129, 74);
+  border: 2px solid #c9a47a;
   transition: 0.4s;
   -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
@@ -946,6 +984,32 @@ body {
   padding: 0 20%;
   -webkit-filter: blur(0.3px);
   filter: blur(0.3px);
+  line-height: 1.8;
+}
+
+#passion-2 {
+  color: rgb(255, 255, 255);
+  font-family: "Lora";
+  font-size: 1.5rem;
+  max-width: 39rem;
+  margin: auto;
+  padding: 0 20%;
+  -webkit-filter: blur(0.3px);
+  filter: blur(0.3px);
+  line-height: 1.8;
+  text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000,
+    0.5px 0.5px 0 #000;
+}
+
+#passion-3 {
+  color: rgb(255, 255, 255);
+  font-family: "Lora";
+  font-size: 1.5rem;
+  max-width: 39rem;
+  margin: auto;
+  padding: 0 20%;
+  -webkit-filter: blur(0.2px);
+  filter: blur(0.2px);
   line-height: 1.8;
 }
 
@@ -1147,32 +1211,48 @@ body {
     width: 50%;
   }
 
+  .header {
+    background-attachment: local;
+  }
+
   .passions {
+    background-attachment: local;
     -webkit-filter: blur(0px);
     filter: blur(0px);
   }
 
   .worship {
+    background-attachment: local;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  .passions-youth {
+    background-attachment: local;
     -webkit-filter: blur(0px);
     filter: blur(0px);
   }
 
   .passions1 {
+    background-attachment: local;
     -webkit-filter: blur(0px);
     filter: blur(0px);
   }
 
   .passions2 {
+    background-attachment: local;
     -webkit-filter: blur(0px);
     filter: blur(0px);
   }
 
   .passions3 {
+    background-attachment: local;
     -webkit-filter: blur(0px);
     filter: blur(0px);
   }
 
   .passions4 {
+    background-attachment: local;
     -webkit-filter: blur(0px);
     filter: blur(0px);
   }
@@ -1191,8 +1271,21 @@ body {
     font-size: 5rem;
   }
 
+  .passions-youth-verse {
+    font-size: 2rem;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
   .passions-item {
     font-size: 2rem;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  .praise {
+    background: url(../images/CF13.jpg) repeat-y;
+    background-attachment: local;
   }
 
   .praise-profile:nth-child(odd) {
@@ -1208,6 +1301,14 @@ body {
 
   .portflio-facebook {
     margin-bottom: 1rem;
+  }
+
+  .worship-item-group-detail {
+    width: 100%;
+  }
+
+  .locations {
+    background-attachment: local;
   }
 
   .locations img {
@@ -1228,9 +1329,9 @@ body {
 
   #nav {
     width: 90%;
+    margin-top: -0.5rem;
     -webkit-filter: blur(0px);
     filter: blur(0px);
-    margin-top: -0.5rem;
   }
 
   #header-title:nth-child(1) {
@@ -1243,7 +1344,7 @@ body {
   }
 
   #galatians {
-    font-size: 0.65rem;
+    font-size: 0.55rem;
     margin: auto;
     margin-top: 1.5rem;
     width: 12rem;
@@ -1288,8 +1389,27 @@ body {
     -webkit-order: 6;
   }
 
-  #passion-1 {
+  #worship-text {
+    margin: 3rem auto;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  #worship-paragraph {
+    margin: auto;
+  }
+
+  #passion-1,
+  #passion-2 {
     font-size: 1.4rem;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  #passion-3 {
+    font-size: 1.4rem;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
   }
 
   #contact-facebook-link,
@@ -1334,10 +1454,6 @@ body {
     width: 30px;
   }
 
-  .header {
-    background-attachment: local;
-  }
-
   .praise-group {
     margin: auto;
   }
@@ -1347,64 +1463,59 @@ body {
     flex-wrap: wrap;
   }
 
+  .worship-item-group-detail > h3 {
+    font-size: 1.3rem;
+  }
+
   .passions {
     font-size: 0.7rem;
     width: fit-content;
     margin: auto;
-    background-position: center;
-    background-attachment: local;
-  }
-
-  #passion-1 {
-    font-size: 1rem;
-    text-shadow: 1px 1px #000;
   }
 
   .worship {
     font-size: 0.7rem;
     width: 100%;
     margin: auto;
-    background-attachment: local;
   }
 
   .worship-item-group {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
   }
 
-  #worship-paragraph {
-    font-size: 1rem;
+  .passions-youth {
+    font-size: 0.7rem;
+    width: fit-content;
+    margin: auto;
   }
 
   .passions1 {
     font-size: 0.7rem;
     width: fit-content;
     margin: auto;
-    background-attachment: local;
   }
 
   .passions2 {
     font-size: 0.7rem;
     width: fit-content;
     margin: auto;
-    background-attachment: local;
   }
 
   .passions3 {
     font-size: 0.7rem;
     width: fit-content;
     margin: auto;
-    background-attachment: local;
   }
 
   .passions4 {
     font-size: 0.7rem;
     width: fit-content;
     margin: auto;
-    background-attachment: local;
   }
 
   .contact {
     padding: 258px 0;
-    background-attachment: local;
   }
 
   .popup1 {
@@ -1436,6 +1547,20 @@ body {
   #contact-facebook-link,
   #contact-event-link {
     font-size: 1rem;
+  }
+
+  #passion-1,
+  #passion-2 {
+    font-size: 1rem;
+  }
+
+  #passion-3 {
+    font-size: 1rem;
+  }
+
+  #worship-paragraph {
+    font-size: 0.9rem;
+    margin: 2rem auto;
   }
 
   #music-button {
