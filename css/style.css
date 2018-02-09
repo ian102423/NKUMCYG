@@ -117,7 +117,6 @@ body {
 
 .popup0 .content0 {
   max-height: 30%;
-  overflow: auto;
   text-align: center;
   text-align: -moz-center;
   text-align: -webkit-center;
@@ -371,24 +370,6 @@ body {
   align-items: center;
 }
 
-.passions1 {
-  font-size: 1.5rem;
-  display: flex;
-  width: 100%;
-  height: 800px;
-  margin: 0 auto;
-  background: url(../images/CF9.jpg) no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  position: relative;
-  text-align: center;
-  text-align: -moz-center;
-  text-align: -webkit-center;
-  align-items: center;
-  opacity: 0.9;
-}
-
 .passions2 {
   font-size: 1.5rem;
   display: flex;
@@ -447,7 +428,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  padding: 3rem 0 5rem 0;
+  padding: 5rem 0;
   text-align: center;
   text-align: -moz-center;
   text-align: -webkit-center;
@@ -484,12 +465,77 @@ body {
   text-align: -webkit-center;
 }
 
+.button1 {
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  font-family: "Bahiana";
+  text-transform: none;
+  text-decoration: none;
+  padding: 0 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.button1:hover {
+  color: rgb(253, 0, 109);
+}
+
+.overlay1 {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay1:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup1 {
+  margin: 7rem auto;
+  padding: 1rem;
+  background: rgb(255, 255, 255);
+  border-radius: 1px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup1 .close1 {
+  position: absolute;
+  top: 0rem;
+  right: 0.7rem;
+  transition: all 200ms;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.popup1 .close1:hover {
+  color: rgb(253, 221, 255);
+}
+
+.popup1 .content1 {
+  max-height: 30%;
+  overflow: auto;
+}
+
+.content1 > div {
+  margin-bottom: 0.5rem;
+}
+
 #credit0 {
   font-size: 1.1rem;
   color: rgb(0, 0, 0);
   text-transform: none;
   text-decoration: none;
-  margin: 1rem;
 }
 
 #credit0:hover {
@@ -512,7 +558,8 @@ body {
   text-decoration: none;
   color: rgb(255, 255, 255);
   z-index: 1000;
-  text-shadow: 0px 0px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 0px 0px 0 #000;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 #nav {
@@ -844,12 +891,6 @@ body {
   text-align: -webkit-center;
 }
 
-#theIronYard:hover {
-  color: rgb(250, 0, 89);
-  transition: 0.1s;
-  -webkit-transition: 0.1s;
-}
-
 #about-contact {
   margin-top: 1.5rem;
   text-align: center;
@@ -887,6 +928,7 @@ body {
 #passions-youth-verse-1 {
   font-weight: 400;
   font-size: 1.5rem;
+  max-width: 45rem;
   line-height: 1.8;
 }
 
@@ -935,6 +977,7 @@ body {
 #passions-youth-verse-2 {
   font-weight: 400;
   font-size: 1.5rem;
+  max-width: 45rem;
   line-height: 1.8;
 }
 
@@ -958,7 +1001,6 @@ body {
 
 #passion-1 {
   color: rgb(255, 255, 255);
-
   font-size: 1.5rem;
   max-width: 39rem;
   margin: auto;
@@ -978,7 +1020,7 @@ body {
 }
 
 #passions-youth-dark {
-  padding: 2rem 0rem;
+  padding: 2.5rem 0rem;
 }
 
 #passions-youth-verse-3 {
@@ -1006,7 +1048,8 @@ body {
 #locations-introduce {
   font-size: 1.1rem;
   width: fit-content;
-  margin: 2rem auto 3rem auto;
+  margin: 2rem auto 2.2rem auto;
+  line-height: 1.65;
 }
 
 #contact-verse {
@@ -1030,7 +1073,7 @@ body {
 #contact-facebook-link,
 #contact-event-link {
   font-size: 1.3rem;
-  font-weight: 300;
+  font-weight: bold;
   color: #c9a47a;
   margin-bottom: 1rem;
   text-decoration: none;
@@ -1056,72 +1099,6 @@ body {
 
 #contact-link {
   color: #c9a47a;
-}
-
-.button1 {
-  color: rgb(0, 0, 0);
-  font-size: 1rem;
-  font-family: "Bahiana";
-  text-transform: none;
-  text-decoration: none;
-  padding: 0 0.5rem;
-  cursor: pointer;
-  transition: all 0.3s ease-out;
-}
-
-.button1:hover {
-  color: rgb(253, 0, 109);
-}
-
-.overlay1 {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
-  visibility: hidden;
-  opacity: 0;
-}
-
-.overlay1:target {
-  visibility: visible;
-  opacity: 1;
-}
-
-.popup1 {
-  margin: 7rem auto;
-  padding: 1rem;
-  background: rgb(255, 255, 255);
-  border-radius: 1px;
-  width: 30%;
-  position: relative;
-  transition: all 5s ease-in-out;
-}
-
-.popup1 .close1 {
-  position: absolute;
-  top: 0rem;
-  right: 0.7rem;
-  transition: all 200ms;
-  font-size: 2rem;
-  font-weight: bold;
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-}
-
-.popup1 .close1:hover {
-  color: rgb(253, 221, 255);
-}
-
-.popup1 .content1 {
-  max-height: 30%;
-  overflow: auto;
-}
-
-.content1 > div {
-  margin-bottom: 0.5rem;
 }
 
 #credit1 {
@@ -1152,15 +1129,13 @@ body {
 #music-button {
   display: -webkit-inline-box;
   display: inline-block;
-  right: 2.15rem;
-  bottom: 3.5rem;
+  font-size: 1.8rem;
+  right: 2rem;
+  bottom: 3.1rem;
   position: fixed;
-  padding: 5px 10px;
-  border: 2px solid rgb(255, 255, 255);
-  border-radius: 25px;
+  border: none;
   background-color: transparent;
   z-index: 1000;
-  box-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 @media (min-width: 1500px) {
@@ -1257,9 +1232,6 @@ body {
     flex-flow: column-reverse;
   }
 
-  .praise-facebook-code-div {
-  }
-
   .portflio-facebook {
     margin-bottom: 1rem;
   }
@@ -1286,6 +1258,7 @@ body {
 
   #credit0 {
     font-size: 0.9rem;
+    margin: 3rem;
   }
 
   #nav {
@@ -1298,7 +1271,7 @@ body {
   }
 
   #passions-youth-verse-1 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 
   #NKUMC-text {
@@ -1354,6 +1327,7 @@ body {
 
   #passions-youth-verse-2 {
     font-size: 1.3rem;
+    max-width: 40rem;
   }
 
   #worship-text {
@@ -1492,7 +1466,7 @@ body {
   }
 
   #nav li a {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   #header-title:nth-child(1) {
@@ -1500,7 +1474,7 @@ body {
   }
 
   #passions-youth-verse-1 {
-    font-size: 0.85rem;
+    font-size: 1rem;
   }
 
   #passion-1,
@@ -1527,6 +1501,10 @@ body {
 
   #passions-youth-verse-3 {
     font-size: 0.7rem;
+  }
+
+  #passions-youth-dark {
+    padding: 2rem 0rem;
   }
 
   #contact-verse {
