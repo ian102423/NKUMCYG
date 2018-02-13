@@ -160,7 +160,7 @@ body {
   text-align: center;
   text-align: -moz-center;
   text-align: -webkit-center;
-  background: url(../images/praiseC.jpg) no-repeat;
+  background: url(../images/CF104.jpg) no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -615,225 +615,430 @@ body {
 
 @-webkit-keyframes color-change {
   0% {
-    color: blue;
+    color: #ff8a80;
+  }
+
+  5% {
+    color: #ff80ab;
   }
 
   10% {
-    color: #8e44ad;
+    color: #ea80fc;
+  }
+
+  15% {
+    color: #b388ff;
   }
 
   20% {
-    color: #1abc9c;
+    color: #8c9eff;
+  }
+
+  25% {
+    color: #82b1ff;
   }
 
   30% {
-    color: #d35400;
+    color: #80d8ff;
+  }
+
+  35% {
+    color: #84ffff;
   }
 
   40% {
-    color: blue;
+    color: #a7ffeb;
+  }
+
+  45% {
+    color: #b9f6ca;
   }
 
   50% {
-    color: #34495e;
+    color: #ccff90;
+  }
+
+  55% {
+    color: #f4ff81;
   }
 
   60% {
-    color: blue;
+    color: #ffff8d;
+  }
+
+  65% {
+    color: #ffe57f;
   }
 
   70% {
-    color: #2980b9;
+    color: #ffd180;
   }
+
+  75% {
+    color: #ff9e80;
+  }
+
   80% {
-    color: #f1c40f;
+    color: #5d4037;
+  }
+
+  85% {
+    color: #b5b3b3;
   }
 
   90% {
-    color: #2980b9;
+    color: #82aabd;
+  }
+
+  95% {
+    color: #e29ab5;
   }
 
   100% {
-    color: pink;
+    color: #ffffff;
   }
 }
 
 @-moz-keyframes color-change {
   0% {
-    color: blue;
+    color: #ff8a80;
+  }
+
+  5% {
+    color: #ff80ab;
   }
 
   10% {
-    color: #8e44ad;
+    color: #ea80fc;
+  }
+
+  15% {
+    color: #b388ff;
   }
 
   20% {
-    color: #1abc9c;
+    color: #8c9eff;
+  }
+
+  25% {
+    color: #82b1ff;
   }
 
   30% {
-    color: #d35400;
+    color: #80d8ff;
+  }
+
+  35% {
+    color: #84ffff;
   }
 
   40% {
-    color: blue;
+    color: #a7ffeb;
+  }
+
+  45% {
+    color: #b9f6ca;
   }
 
   50% {
-    color: #34495e;
+    color: #ccff90;
+  }
+
+  55% {
+    color: #f4ff81;
   }
 
   60% {
-    color: blue;
+    color: #ffff8d;
+  }
+
+  65% {
+    color: #ffe57f;
   }
 
   70% {
-    color: #2980b9;
+    color: #ffd180;
   }
+
+  75% {
+    color: #ff9e80;
+  }
+
   80% {
-    color: #f1c40f;
+    color: #5d4037;
+  }
+
+  85% {
+    color: #b5b3b3;
   }
 
   90% {
-    color: #2980b9;
+    color: #82aabd;
+  }
+
+  95% {
+    color: #e29ab5;
   }
 
   100% {
-    color: pink;
+    color: #ffffff;
   }
 }
 
 @-ms-keyframes color-change {
   0% {
-    color: blue;
+    color: #ff8a80;
+  }
+
+  5% {
+    color: #ff80ab;
   }
 
   10% {
-    color: #8e44ad;
+    color: #ea80fc;
+  }
+
+  15% {
+    color: #b388ff;
   }
 
   20% {
-    color: #1abc9c;
+    color: #8c9eff;
+  }
+
+  25% {
+    color: #82b1ff;
   }
 
   30% {
-    color: #d35400;
+    color: #80d8ff;
+  }
+
+  35% {
+    color: #84ffff;
   }
 
   40% {
-    color: blue;
+    color: #a7ffeb;
+  }
+
+  45% {
+    color: #b9f6ca;
   }
 
   50% {
-    color: #34495e;
+    color: #ccff90;
+  }
+
+  55% {
+    color: #f4ff81;
   }
 
   60% {
-    color: blue;
+    color: #ffff8d;
+  }
+
+  65% {
+    color: #ffe57f;
   }
 
   70% {
-    color: #2980b9;
+    color: #ffd180;
   }
+
+  75% {
+    color: #ff9e80;
+  }
+
   80% {
-    color: #f1c40f;
+    color: #5d4037;
+  }
+
+  85% {
+    color: #b5b3b3;
   }
 
   90% {
-    color: #2980b9;
+    color: #82aabd;
+  }
+
+  95% {
+    color: #e29ab5;
   }
 
   100% {
-    color: pink;
+    color: #ffffff;
   }
 }
 
 @-o-keyframes color-change {
   0% {
-    color: blue;
+    color: #ff8a80;
+  }
+
+  5% {
+    color: #ff80ab;
   }
 
   10% {
-    color: #8e44ad;
+    color: #ea80fc;
+  }
+
+  15% {
+    color: #b388ff;
   }
 
   20% {
-    color: #1abc9c;
+    color: #8c9eff;
+  }
+
+  25% {
+    color: #82b1ff;
   }
 
   30% {
-    color: #d35400;
+    color: #80d8ff;
+  }
+
+  35% {
+    color: #84ffff;
   }
 
   40% {
-    color: blue;
+    color: #a7ffeb;
+  }
+
+  45% {
+    color: #b9f6ca;
   }
 
   50% {
-    color: #34495e;
+    color: #ccff90;
+  }
+
+  55% {
+    color: #f4ff81;
   }
 
   60% {
-    color: blue;
+    color: #ffff8d;
+  }
+
+  65% {
+    color: #ffe57f;
   }
 
   70% {
-    color: #2980b9;
+    color: #ffd180;
   }
+
+  75% {
+    color: #ff9e80;
+  }
+
   80% {
-    color: #f1c40f;
+    color: #5d4037;
+  }
+
+  85% {
+    color: #b5b3b3;
   }
 
   90% {
-    color: #2980b9;
+    color: #82aabd;
+  }
+
+  95% {
+    color: #e29ab5;
   }
 
   100% {
-    color: pink;
+    color: #ffffff;
   }
 }
 @keyframes color-change {
   0% {
-    color: blue;
+    color: #ff8a80;
+  }
+
+  5% {
+    color: #ff80ab;
   }
 
   10% {
-    color: #8e44ad;
+    color: #ea80fc;
+  }
+
+  15% {
+    color: #b388ff;
   }
 
   20% {
-    color: #1abc9c;
+    color: #8c9eff;
+  }
+
+  25% {
+    color: #82b1ff;
   }
 
   30% {
-    color: #d35400;
+    color: #80d8ff;
+  }
+
+  35% {
+    color: #84ffff;
   }
 
   40% {
-    color: blue;
+    color: #a7ffeb;
+  }
+
+  45% {
+    color: #b9f6ca;
   }
 
   50% {
-    color: #34495e;
+    color: #ccff90;
+  }
+
+  55% {
+    color: #f4ff81;
   }
 
   60% {
-    color: blue;
+    color: #ffff8d;
+  }
+
+  65% {
+    color: #ffe57f;
   }
 
   70% {
-    color: #2980b9;
+    color: #ffd180;
   }
+
+  75% {
+    color: #ff9e80;
+  }
+
   80% {
-    color: #f1c40f;
+    color: #5d4037;
+  }
+
+  85% {
+    color: #b5b3b3;
   }
 
   90% {
-    color: #2980b9;
+    color: #82aabd;
+  }
+
+  95% {
+    color: #e29ab5;
   }
 
   100% {
-    color: pink;
+    color: #ffffff;
   }
 }
 
@@ -1132,12 +1337,18 @@ body {
   display: -webkit-inline-box;
   display: inline-block;
   font-size: 1.8rem;
-  right: 2rem;
+  right: 1.9rem;
   bottom: 3.1rem;
   position: fixed;
   border: none;
   background-color: transparent;
   z-index: 1000;
+}
+
+#music-button:focus,
+#music-button:active {
+  background: none;
+  outline: none;
 }
 
 @media (min-width: 1500px) {
@@ -1490,6 +1701,10 @@ body {
 
   #passions-youth-verse-2 {
     font-size: 0.7rem;
+  }
+
+  #praise-text1 {
+    width: 70%;
   }
 
   #worship-text {
