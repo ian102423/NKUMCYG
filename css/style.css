@@ -90,10 +90,10 @@ body {
 
 .popup0 {
   margin: 7rem auto;
-  padding: 1rem;
+  padding: 0.75rem;
   background: rgb(255, 255, 255);
   border-radius: 1px;
-  width: 40%;
+  width: 50%;
   position: relative;
   transition: all 5s ease-in-out;
 }
@@ -441,7 +441,7 @@ body {
 .contact {
   font-size: 1.2rem;
   background-color: rgb(50, 50, 50);
-  background: url(../images/CF8.jpg) no-repeat center;
+  background: url(../zion/zion8.jpg) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -1281,7 +1281,7 @@ body {
 #contact-event-link {
   font-size: 1.3rem;
   font-weight: bold;
-  color: #c9a47a;
+  color: #f7c893;
   margin-bottom: 1rem;
   text-decoration: none;
 }
@@ -1576,8 +1576,8 @@ body {
   }
 
   #contact-verse {
-    font-size: 1.5rem;
-    max-width: 300px;
+    font-size: 1.75rem;
+    max-width: 400px;
   }
 
   #music-button {
@@ -1607,6 +1607,11 @@ body {
 
   .wrapper-logo img {
     width: 30px;
+  }
+
+  .header {
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 
   .praise-group {
@@ -1666,7 +1671,7 @@ body {
   }
 
   .contact {
-    padding: 258px 0;
+    padding: 272px 0;
   }
 
   .popup1 {
