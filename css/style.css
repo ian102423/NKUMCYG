@@ -1687,6 +1687,10 @@ body {
     width: 100%;
   }
 
+  .popup2 {
+    width: 50%;
+  }
+
   #credit0 {
     font-size: 0.9rem;
     margin: 3rem;
@@ -1829,7 +1833,8 @@ body {
   }
 
   .popup0 {
-    width: 70%;
+    width: 90%;
+    padding: 0.5rem;
   }
 
   .wrapper {
@@ -1928,6 +1933,10 @@ body {
     width: 80%;
   }
 
+  .popup2 {
+    width: 90%;
+  }
+
   #nav {
     width: 88%;
     margin-top: -1rem;
@@ -1956,7 +1965,6 @@ body {
 
   #student-leaders {
     height: 500px;
-    margin: 0;
     padding: 0;
   }
 
