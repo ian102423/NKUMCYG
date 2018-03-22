@@ -239,6 +239,32 @@ body {
   text-transform: uppercase;
 }
 
+.button3 {
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  font-family: "Bahiana";
+  text-transform: none;
+  text-decoration: none;
+  padding: 0 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.button3:hover {
+  color: rgb(253, 0, 109);
+}
+
+.praise-group0 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0 12%;
+  margin-top: 2rem;
+  text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
+}
+
 .praise {
   background: url(../images/CF3.svg) no-repeat;
   background-size: cover;
@@ -1257,8 +1283,19 @@ body {
   color: rgb(0, 0, 0);
   width: 55%;
   margin: auto;
-  margin-top: 2rem;
   line-height: 1.5;
+}
+
+#praise-leaders {
+  width: 95%;
+}
+
+#praise-text2 {
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+  width: fit-content;
+  margin: auto;
+  text-transform: uppercase;
 }
 
 #class-leaders {
@@ -1369,15 +1406,6 @@ body {
   background: url() no-repeat 50px;
   background-position: 3.15rem 1.1rem;
   background-size: 230px;
-}
-
-#praise-text2 {
-  font-size: 1rem;
-  color: rgb(0, 0, 0);
-  width: fit-content;
-  margin: auto;
-  margin-top: 7rem;
-  text-transform: uppercase;
 }
 
 #passions-youth-verse-2 {
@@ -1649,6 +1677,10 @@ body {
     background-attachment: local;
   }
 
+  .praise-group0 {
+    padding: 0;
+  }
+
   .praise {
     background-size: auto;
     background-attachment: local;
@@ -1728,6 +1760,15 @@ body {
 
   #about-contact-button {
     margin: 0 10%;
+  }
+
+  #praise-leaders {
+    width: 100%;
+  }
+
+  #praise-text2 {
+    min-width: 80%;
+    margin-top: 1rem;
   }
 
   #praise-profile-img1 {
@@ -1948,6 +1989,15 @@ body {
 
   #header-title:nth-child(1) {
     font-size: 4rem;
+  }
+
+  #praise-text2 {
+    min-width: 80%;
+    margin-top: 1rem;
+  }
+
+  #praise-leaders {
+    padding: 0;
   }
 
   #class-leaders {
