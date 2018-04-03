@@ -279,12 +279,22 @@ body {
   text-align: -webkit-center;
 }
 
+.pastor-text0 {
+  font-weight: 400;
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+  width: 100%;
+  margin: 2rem auto;
+  margin-top: 5rem;
+  text-transform: uppercase;
+}
+
 .praise-profile {
   display: flex;
   width: fit-content;
-  margin: 0 auto;
+  margin: 7rem auto;
+  margin-top: 0;
   max-width: 32.5rem;
-  margin-top: 4rem;
   text-align: center;
   text-align: -moz-center;
   text-align: -webkit-center;
@@ -369,6 +379,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   padding: 0 12%;
+  margin-bottom: 5rem;
   text-align: center;
   text-align: -moz-center;
   text-align: -webkit-center;
@@ -446,9 +457,48 @@ body {
   width: 100%;
 }
 
-.media-group {
+.popup3 {
   margin: 7rem auto;
-  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: rgb(255, 255, 255);
+  border-radius: 1px;
+  width: 90%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup3 .close3 {
+  position: absolute;
+  top: 0rem;
+  right: 0.7rem;
+  transition: all 200ms;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.popup3 .close3:hover {
+  color: rgb(253, 221, 255);
+}
+
+.popup3 {
+  overflow: auto;
+}
+
+.content3 {
+  flex-flow: row;
+  display: flex;
+}
+
+.content3 > img {
+  height: 100%;
+  width: 100%;
+}
+
+.media-group {
+  margin: 0 auto;
+  margin-bottom: 7rem;
 }
 
 .worship {
@@ -614,6 +664,24 @@ body {
 }
 
 .overlay2:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.overlay3 {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+}
+
+.overlay3:target {
   visibility: visible;
   opacity: 1;
 }
@@ -1219,6 +1287,7 @@ body {
 }
 
 #about-contact {
+  flex-wrap: wrap;
   margin-top: 1.5rem;
   text-align: center;
   text-align: -moz-center;
@@ -1237,6 +1306,10 @@ body {
   text-decoration: none;
 }
 
+#about-contact-button:nth-child(2) {
+  color: #c9a47a;
+}
+
 #about-contact-button:hover {
   background-color: transparent;
   border: 2px solid #c9a47a;
@@ -1245,6 +1318,10 @@ body {
   -moz-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
+}
+
+#about-contact-button:nth-child(2):hover {
+  color: rgb(211, 0, 127);
 }
 
 #passion-psalm {
@@ -1261,7 +1338,7 @@ body {
 
 #praise-text {
   font-weight: 400;
-  font-size: 3rem;
+  font-size: 2.7rem;
   color: rgb(0, 0, 0);
   width: fit-content;
   margin: auto;
@@ -1274,7 +1351,7 @@ body {
   color: rgb(0, 0, 0);
   width: fit-content;
   margin: auto;
-  margin-top: 1.5rem;
+  margin-top: 5rem;
   text-transform: uppercase;
 }
 
@@ -1283,11 +1360,11 @@ body {
   color: rgb(0, 0, 0);
   width: 55%;
   margin: auto;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 #praise-leaders {
-  width: 95%;
+  width: 90%;
 }
 
 #praise-text2 {
@@ -1299,7 +1376,7 @@ body {
 }
 
 #class-leaders {
-  width: 65%;
+  width: 70%;
 }
 
 #student-leaders {
@@ -1396,6 +1473,13 @@ body {
 }
 
 #media-text-highlight {
+  color: rgb(211, 0, 127);
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+#praise-text-highlight {
   color: rgb(211, 0, 127);
   font-size: 1.2rem;
   font-weight: 400;
@@ -1617,6 +1701,11 @@ body {
     width: 40%;
   }
 
+  .popup3 {
+    margin: 10% auto;
+    width: 40%;
+  }
+
   .content1 {
     flex-flow: column;
     display: flex;
@@ -1695,6 +1784,11 @@ body {
     flex-flow: column-reverse;
   }
 
+  .content3 {
+    flex-flow: column;
+    display: flex;
+  }
+
   .class-group {
     margin-bottom: 1.5rem;
   }
@@ -1759,7 +1853,13 @@ body {
   }
 
   #about-contact-button {
-    margin: 0 10%;
+    margin: 0;
+    margin-left: 10%;
+  }
+
+  #about-contact-button:nth-child(2) {
+    margin: 0;
+    margin-right: 10%;
   }
 
   #praise-leaders {
@@ -1965,6 +2065,11 @@ body {
     margin: auto;
   }
 
+  .content3 {
+    flex-flow: column;
+    display: flex;
+  }
+
   .contact {
     padding: 272px 0;
   }
@@ -1976,6 +2081,12 @@ body {
 
   .popup2 {
     width: 90%;
+    margin: 5rem auto;
+  }
+
+  .popup3 {
+    margin: auto;
+    width: 80%;
   }
 
   #nav {
@@ -1989,6 +2100,16 @@ body {
 
   #header-title:nth-child(1) {
     font-size: 4rem;
+  }
+
+  #about-contact-button {
+    font-size: 0.75rem;
+    margin: 0;
+  }
+
+  #about-contact-button:nth-child(2) {
+    font-size: 0.75rem;
+    margin: 0;
   }
 
   #praise-text2 {
@@ -2024,6 +2145,7 @@ body {
   }
 
   #student-text1 {
+    font-size: 0.9rem;
     min-width: 80%;
     margin-top: 1rem;
   }
